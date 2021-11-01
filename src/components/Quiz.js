@@ -18,7 +18,7 @@ export const Quiz = ({currentQuestion, questions, answerOptions, checkAnswer, lo
 							
 						) : (
 							<>
-								<h3 className="is-size-2-tablet is-size-3-mobile mb-6">{questions[currentQuestion].category}</h3>
+								<h3 className="is-size-2-tablet is-size-3-mobile mb-6"> <span className="has-text-weight-bold has-text-link">Category:</span> {questions[currentQuestion].category}</h3>
 								<QuestionsCard question={questions[currentQuestion].question} answerOptions={answerOptions} checkAnswer={checkAnswer} />
 								<h3 className="mb-6 is-size-4 has-text-weight-bold">{currentQuestion + 1} of {questions.length}</h3>
 							</>
